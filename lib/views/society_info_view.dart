@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:society_app/utils/validation_helper.dart';
 import 'package:society_app/widgets/custom_textfield.dart';
-
 import '../constants/app_colors.dart';
 import '../controllers/society_info_controller.dart';
 import '../widgets/create_account_header.dart';

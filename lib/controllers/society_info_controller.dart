@@ -4,16 +4,8 @@ import 'package:society_app/routing/app_routes.dart';
 
 class SocietyInfoController extends GetxController {
 
-  //=========================================================
-  // Form Key
-  //=========================================================
-
   final GlobalKey<FormState> formKey =
   GlobalKey<FormState>();
-
-  //=========================================================
-  // Text Controllers
-  //=========================================================
 
   final TextEditingController cityController =
   TextEditingController();
@@ -100,13 +92,10 @@ class SocietyInfoController extends GetxController {
       return;
     }
 
-    /// TODO:
-    /// Call Registration API
-
     Get.snackbar(
       "Success",
       "Society Information Saved Successfully",
-      snackPosition: SnackPosition.BOTTOM,
+      snackPosition: SnackPosition.TOP,
     );
 
     // Example:
