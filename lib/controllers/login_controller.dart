@@ -5,7 +5,6 @@ import 'package:society_app/routing/app_routes.dart';
 
 class LoginController extends GetxController {
 
-
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   final TextEditingController mobileController = TextEditingController();

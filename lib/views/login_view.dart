@@ -112,7 +112,7 @@ class LoginView extends GetView<LoginController> {
                                     Routes.forgotPassword,
                                   );
                                 },
-                                child: const Text(
+                                child: Text(
                                   "Forgot Password?",
                                   style: TextStyle(
                                     color: AppColors.primary,

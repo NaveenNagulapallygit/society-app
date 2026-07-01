@@ -14,8 +14,8 @@ class OccupantSwitchCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 18),
-      padding: const EdgeInsets.symmetric(
+      margin:  EdgeInsets.only(top: 18),
+      padding:  EdgeInsets.symmetric(
         horizontal: 18,
         vertical: 14,
       ),
@@ -40,7 +40,7 @@ class OccupantSwitchCard extends StatelessWidget {
           GestureDetector(
             onTap: () => onChanged(!value),
             child: AnimatedContainer(
-              duration: const Duration(milliseconds: 250),
+              duration: Duration(milliseconds: 250),
               width: 105,
               height: 52,
               decoration: BoxDecoration(
@@ -50,7 +50,7 @@ class OccupantSwitchCard extends StatelessWidget {
                     : Colors.grey.shade300,
               ),
               child: AnimatedAlign(
-                duration: const Duration(milliseconds: 250),
+                duration: Duration(milliseconds: 250),
                 curve: Curves.easeInOut,
                 alignment: value
                     ? Alignment.centerRight
@@ -58,8 +58,8 @@ class OccupantSwitchCard extends StatelessWidget {
                 child: Container(
                   width: 44,
                   height: 44,
-                  margin: const EdgeInsets.all(4),
-                  decoration: const BoxDecoration(
+                  margin: EdgeInsets.all(4),
+                  decoration:  BoxDecoration(
                     color: Colors.white,
                     shape: BoxShape.circle,
                   ),

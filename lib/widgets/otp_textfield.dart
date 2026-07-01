@@ -14,7 +14,6 @@ class OtpTextField extends StatelessWidget {
     this.isFirst = false,
   });
 
-
   @override
   Widget build(BuildContext context) {
     return SizedBox(

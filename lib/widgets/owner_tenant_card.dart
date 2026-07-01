@@ -15,14 +15,11 @@ class OwnerTenantCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Container(
-      padding: const EdgeInsets.all(10),
-
+      padding:  EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(18),
-
         border: Border.all(
           color: Colors.grey.shade300,
         ),
@@ -30,7 +27,6 @@ class OwnerTenantCard extends StatelessWidget {
 
       child: Row(
         children: [
-
           Expanded(
             child: _buildItem(
               title: "Owner",
@@ -40,9 +36,7 @@ class OwnerTenantCard extends StatelessWidget {
             ),
           ),
 
-
-          const SizedBox(width: 12),
-
+           SizedBox(width: 12),
 
           Expanded(
             child: _buildItem(
@@ -52,12 +46,10 @@ class OwnerTenantCard extends StatelessWidget {
               selectedType == "Tenant",
             ),
           ),
-
         ],
       ),
     );
   }
-
 
 
   Widget _buildItem({
@@ -65,34 +57,22 @@ class OwnerTenantCard extends StatelessWidget {
     required IconData icon,
     required bool selected,
   }) {
-
     return InkWell(
-
       onTap: (){
         onChanged(title);
       },
-
       borderRadius:
       BorderRadius.circular(15),
-
-
       child: Container(
-
         height: 80,
-
         decoration: BoxDecoration(
-
           color: selected
               ? AppColors.primary
               : Colors.grey.shade100,
-
           borderRadius:
           BorderRadius.circular(15),
         ),
-
-
         child: Row(
-
           mainAxisAlignment:
           MainAxisAlignment.center,
 
@@ -108,9 +88,7 @@ class OwnerTenantCard extends StatelessWidget {
                   : Colors.blueGrey,
             ),
 
-
-            const SizedBox(width: 10),
-
+             SizedBox(width: 10),
 
             Text(
               title,

@@ -86,8 +86,6 @@ class SocietyInfoController extends GetxController {
       "Society Information Saved Successfully",
       snackPosition: SnackPosition.TOP,
     );
-
-    // Get.offAllNamed(Routes.login);
   }
 
   @override
