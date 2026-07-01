@@ -102,7 +102,7 @@ class CreateAccountHeader extends StatelessWidget {
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                icon: const Icon(
+                icon: Icon(
                   Icons.arrow_back,
                   color: Colors.white,
                   size: 24,
@@ -110,14 +110,12 @@ class CreateAccountHeader extends StatelessWidget {
               ),
             ),
 
-            // Centered Content Layer
             Padding(
-              padding: const EdgeInsets.only(top: 8.0),
+              padding:  EdgeInsets.only(top: 8.0),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // Apartment Icon Container
                   Container(
                     height: 65,
                     width: 65,
@@ -129,17 +127,16 @@ class CreateAccountHeader extends StatelessWidget {
                         width: 1,
                       ),
                     ),
-                    child: const Icon(
+                    child:  Icon(
                       Icons.apartment,
                       color: Colors.white,
                       size: 38,
                     ),
                   ),
 
-                  const SizedBox(height: 16),
+                   SizedBox(height: 16),
 
-                  // Main Title
-                  const Text(
+                   Text(
                     "Create Account",
                     style: TextStyle(
                       color: Colors.white,
@@ -148,10 +145,9 @@ class CreateAccountHeader extends StatelessWidget {
                     ),
                   ),
 
-                  const SizedBox(height: 6),
+                   SizedBox(height: 6),
 
-                  // Subtitle
-                  const Text(
+                   Text(
                     "Personal Information",
                     style: TextStyle(
                       color: Colors.white70,

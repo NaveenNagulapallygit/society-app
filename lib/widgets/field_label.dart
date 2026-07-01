@@ -27,7 +27,7 @@ class FieldLabel extends StatelessWidget {
             ),
           ),
           if (isRequired)
-            const TextSpan(
+             TextSpan(
               text: " *",
               style: TextStyle(
                 color: Colors.red,

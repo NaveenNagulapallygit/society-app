@@ -21,7 +21,7 @@ class LoginOptionButton extends StatelessWidget {
         onTap: onTap,
         borderRadius: BorderRadius.circular(12),
         child: Padding(
-          padding: const EdgeInsets.symmetric(
+          padding:  EdgeInsets.symmetric(
             horizontal: 20,
             vertical: 18,
           ),
@@ -37,19 +37,19 @@ class LoginOptionButton extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(width: 16),
+               SizedBox(width: 16),
 
               Expanded(
                 child: Text(
                   title,
-                  style: const TextStyle(
+                  style:  TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
               ),
 
-              const Icon(
+               Icon(
                 Icons.arrow_forward_ios_rounded,
                 size: 18,
                 color: Colors.grey,

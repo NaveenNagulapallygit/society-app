@@ -19,8 +19,8 @@ class RoleCard extends StatelessWidget {
       onTap: onTap,
       borderRadius: BorderRadius.circular(18),
       child: Container(
-        margin: const EdgeInsets.only(bottom: 15),
-        padding: const EdgeInsets.all(16),
+        margin:  EdgeInsets.only(bottom: 15),
+        padding:  EdgeInsets.all(16),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(18),
@@ -33,8 +33,6 @@ class RoleCard extends StatelessWidget {
         ),
         child: Row(
           children: [
-
-            /// Role Icon Container
             Container(
               width: 60,
               height: 60,
@@ -53,13 +51,12 @@ class RoleCard extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(width: 16),
+             SizedBox(width: 16),
 
-            /// Role Name
             Expanded(
               child: Text(
                 title,
-                style: const TextStyle(
+                style:  TextStyle(
                   color: Colors.black,
                   fontSize: 18,
                   fontWeight: FontWeight.w600,
@@ -67,7 +64,6 @@ class RoleCard extends StatelessWidget {
               ),
             ),
 
-            /// Custom Radio Indicator
             Container(
               width: 28,
               height: 28,
@@ -85,7 +81,7 @@ class RoleCard extends StatelessWidget {
                 child: Container(
                   width: 14,
                   height: 14,
-                  decoration: const BoxDecoration(
+                  decoration:  BoxDecoration(
                     color: AppColors.primary,
                     shape: BoxShape.circle,
                   ),

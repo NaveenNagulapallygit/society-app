@@ -302,43 +302,28 @@ class RegistrationView extends GetView<RegistrationController> {
                               if(controller.selectedRole.value != "Resident"){
                                 return const SizedBox();
                               }
-
-
                               return Column(
-
                                 crossAxisAlignment:
                                 CrossAxisAlignment.start,
-
                                 children: [
 
+                                   SizedBox(height:20),
 
-                                  const SizedBox(height:20),
-
-
-                                  const FieldLabel(
+                                   FieldLabel(
                                     title: "Resident Type",
                                     isRequired: true,
                                   ),
 
-
-                                  const SizedBox(height:15),
-
-
+                                   SizedBox(height:15),
                                   OwnerTenantCard(
-
                                     selectedType:
                                     controller.residentType.value,
-
                                     onChanged: (value){
-
                                       controller.selectResidentType(
                                         value,
                                       );
-
                                     },
                                   ),
-
-
                                 ],
                               );
                             },
