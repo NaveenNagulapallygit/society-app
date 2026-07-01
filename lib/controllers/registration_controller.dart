@@ -94,8 +94,13 @@ class RegistrationController extends GetxController {
     if (!validateRegistration()) {
       return;
     }
+    Get.toNamed(
+        Routes.societyInfo,
+      arguments: {
+          'role': selectedRole.value,
+      }
 
-    Get.toNamed(Routes.societyInfo);
+    );
   }
 
   @override

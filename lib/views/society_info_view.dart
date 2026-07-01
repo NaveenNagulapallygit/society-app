@@ -134,42 +134,44 @@ class SocietyInfoView extends GetView<SocietyInfoController> {
 
                            SizedBox(height: 18),
 
-                           FieldLabel(
-                            title: "Tower Name / Street Name",
-                            isRequired: true,
-                          ),
+                           if(controller.isResident)... [
+                             FieldLabel(
+                               title: "Tower Name / Street Name",
+                               isRequired: true,
+                             ),
 
-                           SizedBox(height: 8),
+                              SizedBox(height: 10),
 
-                          CustomTextField(
-                            controller: controller.towerController,
-                            hint: "Enter Tower Name / Street Name",
-                            prefixIcon: Icons.business_outlined,
-                            keyboardType: TextInputType.text,
-                            validator: ValidationHelper.validateTower,
-                          ),
+                             CustomTextField(
+                               controller: controller.towerController,
+                               hint: "Enter Tower Name / Street Name",
+                               prefixIcon: Icons.apartment_outlined,
+                               validator: ValidationHelper.validateTower,
+                             ),
 
-                           SizedBox(height: 18),
+                              SizedBox(height: 20),
 
-                           FieldLabel(
-                            title: "Door No / Flat No",
-                            isRequired: true,
-                          ),
+                             FieldLabel(
+                               title: "Door No / Flat No",
+                               isRequired: true,
+                             ),
 
-                          const SizedBox(height: 8),
+                             SizedBox(height: 10),
 
-                          CustomTextField(
-                            controller: controller.flatController,
-                            hint: "Enter Door No / Flat No",
-                            prefixIcon: Icons.meeting_room_outlined,
-                            keyboardType: TextInputType.text,
-                            validator: ValidationHelper.validateFlatNumber,
-                          ),
+                             CustomTextField(
+                               controller: controller.flatController,
+                               hint: "Enter Door No / Flat No",
+                               prefixIcon: Icons.home_outlined,
+                               validator: ValidationHelper.validateFlatNumber,
+                             ),
+
+                             SizedBox(height: 20),
+                           ],
                         ],
                       ),
                     ),
 
-                    const SizedBox(height: 20),
+                    SizedBox(height: 20),
 
                     SizedBox(
                       width: double.infinity,
@@ -194,7 +196,7 @@ class SocietyInfoView extends GetView<SocietyInfoController> {
                       ),
                     ),
 
-                    const SizedBox(height: 30),
+                     SizedBox(height: 30),
 
                   ],
                 ),

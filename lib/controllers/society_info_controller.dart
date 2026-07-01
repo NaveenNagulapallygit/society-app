@@ -22,9 +22,10 @@ class SocietyInfoController extends GetxController {
   final TextEditingController flatController =
   TextEditingController();
 
-  //=========================================================
-  // Open City Selection
-  //=========================================================
+  final String selectedRole = Get.arguments['role']?? '';
+
+  bool get isResident => selectedRole == 'Resident';
+
 
   Future<void> openCitySelection() async {
 
@@ -41,10 +42,6 @@ class SocietyInfoController extends GetxController {
     }
   }
 
-  //=========================================================
-  // Open State Selection
-  //=========================================================
-
   Future<void> openStateSelection() async {
 
     final result = await Get.toNamed(
@@ -59,10 +56,6 @@ class SocietyInfoController extends GetxController {
       stateController.text = result;
     }
   }
-
-  //=========================================================
-  // Open Society Selection
-  //=========================================================
 
   Future<void> openSocietySelection() async {
 
@@ -79,10 +72,6 @@ class SocietyInfoController extends GetxController {
     }
   }
 
-  //=========================================================
-  // Continue Registration
-  //=========================================================
-
   void continueRegistration() {
 
     final bool isValid =
@@ -98,13 +87,8 @@ class SocietyInfoController extends GetxController {
       snackPosition: SnackPosition.TOP,
     );
 
-    // Example:
     // Get.offAllNamed(Routes.login);
   }
-
-  //=========================================================
-  // Dispose Controllers
-  //=========================================================
 
   @override
   void onClose() {
